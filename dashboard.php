@@ -16,7 +16,7 @@
                 Just a test bruh!!!
             </div>
             <div class="welcomeMessage">
-                Hallo <b>MyName</b>, Welcome to my website.
+                Hallo <b><?php echo $name ?></b>, Welcome to my website.
             </div>
             <div class="notes">
                 You can modify this page by editing the file `dashboard.php`

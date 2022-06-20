@@ -16,6 +16,17 @@
             <div class="tip">
                 Make your account here bro
             </div>
+            <?php
+            session_start();
+            if(isset($_SESSION['error'])){
+                echo "<div class='errorMsg'>{$_SESSION['error']}</div>";
+                unset($_SESSION['error']);
+            }
+            if(isset($_SESSION['success'])){
+                echo "<div class='successMsg'>{$_SESSION['success']}</div>";
+                unset($_SESSION['success']);
+            }
+            ?>
             <label for="name">
                 Name
             </label>

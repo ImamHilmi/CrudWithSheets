@@ -16,6 +16,13 @@
             <div class="tip">
                 Login to your account using email and password
             </div>
+            <?php
+            session_start();
+            if(isset($_SESSION['error'])){
+                echo "<div class='errorMsg'>{$_SESSION['error']}</div>";
+                unset($_SESSION['error']);
+            }
+            ?>
             <label for="email">
                 Email
             </label>
