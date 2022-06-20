@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
 </head>
 <body>
     <div class="formContainer">
         <form method="post" action="login_action.php">
             <h2 class="title">
-                Login
+                Sign Up
             </h2>
             <div class="tip">
-                Login to your account using email and password
+                Make your account here bro
             </div>
+            <label for="name">
+                Name
+            </label>
+            <input type="name" name="Name">
             <label for="email">
                 Email
             </label>
@@ -24,10 +28,10 @@
                 Password
             </label>
             <input type="password" name="password">
-            <input type="submit" value="Login">
+            <input type="submit" value="Sign Up">
         </form>
         <div class="link">
-            Don't have an account yet? <a href="signup.php"> Sign Up </a>
+            Already have an account? <a href="login.php"> Login </a>
         </div>
     </div>
 </body>
