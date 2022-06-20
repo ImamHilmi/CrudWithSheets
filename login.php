@@ -8,15 +8,26 @@
 </head>
 <body>
     <div class="formContainer">
-        <h2 class="title">
-            Login
-        </h2>
-        <div class="tip">
-            Login to your account using email and password
+        <form method="post" action="login_action.php">
+            <h2 class="title">
+                Login
+            </h2>
+            <div class="tip">
+                Login to your account using email and password
+            </div>
+            <label for="email">
+                Email
+            </label>
+            <input type="email" name="Email">
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+        <div class="link">
+            Don't have an account yet? <a href="signup.php"> Sign Up </a>
         </div>
-        <label for="email">
-            Email
-        </label>
     </div>
 </body>
 </html>
